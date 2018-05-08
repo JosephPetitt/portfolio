@@ -1,0 +1,214 @@
+
+
+/*Media Queries*/
+
+/*Make landing page full screen regardless of device height*/
+@media screen and (max-height: 830px) {
+	#intro {
+		height: auto !important;
+		min-height: 100vh !important;
+		
+	}
+}
+
+
+/*Adjust button spacing for phone screens*/
+@media screen and (max-width: 575px) {
+	.phoneCenter {
+		text-align: center !important;	
+	}
+	
+	.navRow1 {
+		margin-right: 7px auto !important;
+		
+	}
+	
+	.navRow2 {
+		margin-left: 7px auto !important;
+		
+	}
+	
+	hr.intro {
+		width: 200px !important;
+	}
+}
+	
+
+/* general tags */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-bottom: 20rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	
+	z-index: 1;
+	
+}
+
+/*Fancy HR styles*/
+hr.flare {
+    height: 50px;
+    border-style: ridge;
+    border-color: white;
+    border-width: 2px 0 0 0;
+    border-radius: 45px;
+}
+hr.flare:before {
+    display: block;
+    content: "";
+    height: 50px;
+    margin-top: -51px;
+    border-style: ridge;
+    border-color: white;
+    border-width: 0 0 2px 0;
+    border-radius: 45px;
+}
+
+hr.contact {
+    height: 8px;
+    border-radius: 11px;
+    border: 0;
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	background: white;
+	width: 100px;
+	
+}
+
+hr.intro {
+    height: 8px;
+    border-radius: 11px;
+    border: 0;
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	background: white;
+	width: 450px;
+	
+}
+
+/*Fix header to the top*/
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.largerText {
+	
+	font-size: 1.25rem;
+	
+}
+
+/*Style landing page buttons*/
+.introButton{
+    background: lightseagreen;
+    margin: 20px;
+    float: left;
+    border: 0px;
+    color: white;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+    -webkit-box-shadow: 0px 0px 0 0 #31708f inset , 0px 0px 0 0 #31708f inset;
+	box-shadow: 0px 0px 0 0 #31708f inset , 0px 0px 0 0 #31708f inset;
+	min-width: 185px;
+	min-height: 40px;
+}
+.introButton:hover{
+    -webkit-box-shadow: 100px 0px 0 0 #31708f inset , -100px 0px 0 0 #31708f inset;
+	box-shadow: 100px 0px 0 0 #31708f inset , -100px 0px 0 0 #31708f inset;
+}
+
+/*Style navbar buttons*/
+
+.navbutton{
+	width: 82px;
+    border: 0px;
+    color: black;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.5s;
+    -webkit-box-shadow: 0px 0px 0 0 #31708f inset , 0px 0px 0 0 #31708f inset;
+	transition-duration: 0.5s;
+	box-shadow: 0px 0px 0 0 #31708f inset , 0px 0px 0 0 #31708f inset;
+}
+.navbutton:hover{
+    -webkit-box-shadow: 100px 0px 0 0 #31708f inset , -100px 0px 0 0 #31708f inset;
+	box-shadow: 100px 0px 0 0 #31708f inset , -100px 0px 0 0 #31708f inset;
+	color: white;
+}
+
+
+
+/*Fix footer to bottom*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  
+}
+
+/*Fix size of form buttons for contact form*/
+.form-control {
+	
+	max-width: 400px;
+	margin: 0 auto;
+	float: none;
+}
+
+
+
+/*Make headshot round*/
+
+#headshot {
+	border-radius: 50%;
+	
+}
+
+
+
+/*Gradient Background for landing page*/
+
+#intro{
+	font-family: 'Raleway', sans-serif;
+	background: linear-gradient(132deg, #cc1e1e, #1665c1);
+	background-size: 400% 400%;
+	animation: BackgroundGradient 15s ease infinite;
+	height: 100vh; 
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+}	
+
+@keyframes BackgroundGradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100%{background-position: 0% 50%;}
+	
+}
+
+
+
+	
