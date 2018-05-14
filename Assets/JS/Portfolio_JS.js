@@ -1,6 +1,6 @@
 //fix navbar to top upon scrolling past landing page
 $(window).scroll(function(){
-    if ($(window).scrollTop() >= $(window).height()) {
+    if ($(window).scrollTop()  >= $(window).height()) {
         $('header').addClass('fixed-header');
         
     }
@@ -9,6 +9,12 @@ $(window).scroll(function(){
         
     }
 });
+
+//Email contact form validation
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
 
 	
 //page navigation for navbar buttons	

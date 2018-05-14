@@ -3,7 +3,7 @@
 /*Media Queries*/
 
 /*Make landing page full screen regardless of device height*/
-@media screen and (max-height: 830px) {
+@media screen and (max-height: 1150px) {
 	#intro {
 		height: auto !important;
 		min-height: 100vh !important;
@@ -20,18 +20,40 @@
 	
 	.navRow1 {
 		margin-right: 7px auto !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		
 		
 	}
 	
 	.navRow2 {
 		margin-left: 7px auto !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		
+		
+		
 		
 	}
 	
+	#introButtonRow {
+		
+		align-items: center;
+		flex-direction: column; 
+		flex: 0 0 auto; 
+		
+	}
+
+	
+
 	hr.intro {
 		width: 200px !important;
 	}
 }
+
+
+
+
 	
 
 /* general tags */
@@ -117,7 +139,6 @@ hr.intro {
 .introButton{
     background: lightseagreen;
     margin: 20px;
-    float: left;
     border: 0px;
     color: white;
     box-shadow: 0 0 1px #ccc;
@@ -131,6 +152,7 @@ hr.intro {
 .introButton:hover{
     -webkit-box-shadow: 100px 0px 0 0 #31708f inset , -100px 0px 0 0 #31708f inset;
 	box-shadow: 100px 0px 0 0 #31708f inset , -100px 0px 0 0 #31708f inset;
+	color: white;
 }
 
 /*Style navbar buttons*/
@@ -179,7 +201,12 @@ hr.intro {
 	
 }
 
-
+/*Force text to wrap in IE inside "container-fluid" doesn't wrap by default*/
+.ieWrap {
+	box-sizing: border-box;
+    max-width: 100%; 
+	
+}
 
 /*Gradient Background for landing page*/
 

@@ -18,15 +18,15 @@
 	<!-- Main landing page with introductory info and links to GitHub and Resume -->
 	<div id="intro" class="container-fluid text-center">
 		
-			<h1 class="text-white"><span>Joseph Petitt</br>Software Developer</h1>
+			<h1 class="text-white ieWrap"><span>Joseph Petitt</br>Software Developer</h1>
 			
 			<img id="headshot" alt="a picture of Joseph Petitt" src="Assets/Images/headshot.jpg">
 			
-			<h2 class="text-white mt-5">Hello there, a bit about me:</h2>
+			<h2 class="text-white mt-5 ieWrap">Hello there, a bit about me:</h2>
 			<hr class="intro"</hr>
 			
 
-			<p class="text-white largerText">
+			<p class="text-white largerText ieWrap">
 					I have diverse experience in software development ranging from front end to back spanning just over 4 years.</br>
 					Creativity is inherent to my personality and I live for a good challenge. I love mountain biking and speak Spanish proficiently.</br></br>
 					Experience with:</br>
@@ -38,14 +38,14 @@
 					SharePoint 2010/2013
 			</p>
 			
-		<div class="row">
+		<div id="introButtonRow" class="row">
 		
-			<div class="col-sm-6 col-xs-12">
+			<div class="col-xs-12">
 			
 				<button type="button" class="resumeButton introButton btn btn-light mt-4" onclick="">See detailed resume</button>
 			</div>
 			
-			<div class="col-sm-6 col-xs-12">
+			<div class="col-xs-12">
 				<button type="button" class="introButton btn btn-light mt-4" onclick="window.open('https://github.com/JosephPetitt','_blank')">View GitHub Profile</button>
 			</div>
 		
@@ -213,19 +213,19 @@
 	</div>
 	
 	<!-- Email Contact Form -->
-	<footer class="bg-secondary footer text-center">
+	<footer name="contact" class="bg-secondary footer text-center">
 	
 		<h2 class="text-white">Contact</h2>
 		<hr class="contact"/>
 		
 		<h3 class="text-white">Got a question? Send it my way.</h3>
 		
-		<form  action="mailto:joseph102@bellsouth.net" method="post" enctype="text/plain" class="center-block">
+		<form class="center-block" method="post" name="contact_form" action="Assets/PHP/email.php">
 			  <div class="form-group">
-				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+				<input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 			  </div>
 			  <div class="form-group">
-				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
+				<textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
 			  </div>
 			  <button type="submit" class="mb-4 btn btn-primary">Submit</button>
 		</form>
